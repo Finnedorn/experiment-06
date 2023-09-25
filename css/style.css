@@ -31,13 +31,6 @@ html {
 
 */
 
-/*flex*/
-
-.flex-wrap {
-    display: flex;
-    flex-flow: row wrap;
-}
-
 /*position*/
 
 .p-fixed {
@@ -71,10 +64,23 @@ img {
     width: 100%;
 }
 
+ul>li {
+    list-style: none;
+}
+
 .container {
-    width: 100;
+    width: 100%;
     margin: 0 auto;
-    padding: 0px 35px;
+}
+
+.padding-y {
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.padding-x {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .text-center {
@@ -134,13 +140,16 @@ nav {
 /*intro*/
 
 .intro-card-wrapper {
-    display: inline-block;
     padding: 20px;
+}
+
+.intro-card {
+    padding: 20px;
+    height: 100%;
 }
 
 .intro-card-icon {
     font-size: 6rem;
-    padding: 10px;
 }
 
 .intro-card-text {
@@ -152,4 +161,42 @@ nav {
 footer {
     background-color: var(--color-secondary-black);
     color: var(--color-primary-white);
+}
+
+/*media quary*/
+
+@media screen and (min-width: 576px) {
+
+    .d-flex {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .align-stretch {
+        align-items: stretch;
+        align-content: stretch;
+    }
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    #intro .intro-card-wrapper {
+        width: calc(100% / 3);
+    }
+
+    #intro .intro-card-wrapper:first-child {
+        width: calc((100% / 3) * 2);
+    }
+
+}
+
+/*appare il mockup*/
+@media screen and (min-width: 768px) {
+     
+}
+
+
+@media screen and (min-width: 1200px) {
+    
 }
