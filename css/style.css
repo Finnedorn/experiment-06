@@ -1,0 +1,155 @@
+/*reset*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*palette*/
+
+:root {
+    --color-primary-white: #fffeff;
+    --color-primary-blue: #0084fd;
+    --color-primary-purple: #9792e4;
+    --color-secondary-black: #343334;
+    --color-secondary-azure: #b8dcff;
+    --color-secondary-yellow: #fdc061;
+}
+
+/*icons 
+
+<i class="fa-solid fa-file-code"></i> --file-code
+<i class="fa-solid fa-compass-drafting"></i> --compass
+<i class="fa-solid fa-laptop-code"></i> --laptop-code
+<i class="fa-solid fa-volume-high"></i> --speaker
+
+*/
+
+/*flex*/
+
+.flex-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+/*position*/
+
+.p-fixed {
+    position: fixed;
+}
+
+.p-index-high {
+    z-index: 100;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+/*miscellaeous*/
+
+h2 {
+    font-size: 2.2 rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+
+p {
+    line-height: 30px;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 100;
+    margin: 0 auto;
+    padding: 0px 35px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.button-wrapper {
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.propic-wrapper {
+    border-radius: 50%;
+}
+
+.border-rounded-small {
+    border-radius: 30px;
+}
+
+.border-rounded-big {
+    border-radius: 40px;
+}
+
+.bg-azure {
+    background-color: var(--color-secondary-azure);
+}
+
+.bg-white {
+    background-color: var(--color-primary-white);
+}
+
+.bg-purple {
+    background-color: var(--color-primary-purple);
+}
+
+.text-blue {
+    color: var(--color-primary-blue);
+}
+
+.text-white {
+    color: var(--color-primary-white);
+}
+
+.text-black {
+    color: var(--color-secondary-black);
+}
+
+/*header*/
+
+nav {
+    background-color: var(--color-primary-blue);
+    color: var(--color-primary-white);
+}
+
+/*main*/
+
+/*intro*/
+
+.intro-card-wrapper {
+    display: inline-block;
+    padding: 20px;
+}
+
+.intro-card-icon {
+    font-size: 6rem;
+    padding: 10px;
+}
+
+.intro-card-text {
+    padding: 20px 50px;
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--color-secondary-black);
+    color: var(--color-primary-white);
+}
